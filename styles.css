@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Blissfont";
+    src: url(fonts/Sriracha-Regular.ttf);
+}
+
 body {
     display: flex;
 }
@@ -20,18 +25,37 @@ body {
 
 .textcontainer {
 
-    flex: auto;
+    flex: 0 1 33.33%;
     background-color: green;
 }
 
 .formcontainer {
-    flex: auto;
-
+    flex: 0 1 33.33%;
     background-color: pink;
 
 }
 
+.textwrap {
+    margin-top: 10%;
+    background-color: blueviolet;
+
+
+}
+
+.logoarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-top: 38%;
+    opacity: 40%;
+    background-color: chocolate;
+    height: 17%;
+    font-family: 'Blissfont', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
 .botcontainer {
-    flex: auto;
+    flex: 0 1 33.33%;
     background-color: aquamarine;
 }
