@@ -48,14 +48,33 @@ body {
     align-items: center;
     font-size: 4rem;
     margin-top: 38%;
-    opacity: 40%;
-    background-color: chocolate;
+    background-color: rgb(210, 105, 30, 0.4);
     height: 17%;
     font-family: 'Blissfont', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 }
 
+.logo {
+    height: 4rem;
+    width: 4rem;
+}
+
 .botcontainer {
     flex: 0 1 33.33%;
     background-color: aquamarine;
+
+}
+
+.formwrapper {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 25%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.submission {
+    margin-top: 5%;
+    margin-left: 5%;
 }
