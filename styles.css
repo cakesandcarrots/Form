@@ -1,6 +1,11 @@
 @font-face {
     font-family: "Blissfont";
     src: url(fonts/Sriracha-Regular.ttf);
+    font-family: "inputlabelfont";
+    src: url(fonts/ABeeZee-Regular.ttf);
+    font-family: "textfont";
+    src: url(fonts/PTMono-Regular.ttf);
+
 }
 
 body {
@@ -20,48 +25,50 @@ body {
     flex-direction: column;
     height: 130vh;
     width: 60vw;
-    background-color: blueviolet;
 }
 
 .textcontainer {
 
     flex: 0 1 33.33%;
-    background-color: green;
+
 }
 
 .formcontainer {
     flex: 0 1 33.33%;
-    background-color: pink;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 
 }
 
 .textwrap {
+    margin-left: 5%;
     margin-top: 10%;
-    background-color: blueviolet;
+    font-family: "textfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
 
 
 }
 
 .logoarea {
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
     margin-top: 38%;
-    background-color: rgb(210, 105, 30, 0.4);
+    background-color: rgba(109, 108, 107, 0.348);
     height: 17%;
     font-family: 'Blissfont', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 }
 
 .logo {
+    filter: invert(98%) sepia(98%) saturate(0%) hue-rotate(350deg) brightness(103%) contrast(104%);
     height: 4rem;
     width: 4rem;
 }
 
 .botcontainer {
     flex: 0 1 33.33%;
-    background-color: aquamarine;
 
 }
 
@@ -77,4 +84,44 @@ body {
 .submission {
     margin-top: 5%;
     margin-left: 5%;
+}
+
+.inputbox {
+    border-radius: 5px;
+}
+
+.labels {
+    font-size: xx-small;
+    font-family: "inputlabelfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.moretext {
+    font-family: "textfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.submitbutton {
+    font-family: "textfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border-radius: 5px;
+    color: white;
+    font-size: x-small;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    background-color: darkolivegreen;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.login {
+    color: darkolivegreen;
+
+}
+
+.logtext {
+    font-family: "textfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: small;
+
 }
