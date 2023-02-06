@@ -26,21 +26,22 @@
         </div>
         <div class="formcontainer">
 
-            <form action="" method="post" class="formwrapper">
+            <form action="" id="dataform" method="post" class="formwrapper">
                 <div>
                     <div class="moretext"> Let's do this! </div>
                     <br>
-                    <label for="firstname" class="labels">FIRST NAME</label>
+                    <label for="firstname" class="labels">*FIRST NAME</label>
                     <br>
-                    <input type="text" id="firstname" name="firstname" class="inputbox">
+                    <input required type="text" id="firstname" name="firstname" class="inputbox">
                     <br>
-                    <label for="e-mail" class="labels">EMAIL</label>
+                    <label for="e-mail" class="labels">*EMAIL</label>
                     <br>
-                    <input type="email" id="e-mail" name="email" class="inputbox">
+                    <input required type="email" id="e-mail" name="email" class="inputbox">
                     <br>
-                    <label for="password" class="labels">PASSWORD</label>
+                    <label for="password" class="labels">*PASSWORD</label>
                     <br>
-                    <input type="password" id="password" name="password" class="inputbox">
+                    <input required type="password" id="password" name="password" class="inputbox" minlength="8"
+                        maxlength="20">
                 </div>
                 <div>
                     <br>
@@ -53,16 +54,17 @@
                     <br>
                     <input type="tel" id="phoneno" name="Phone number" class="inputbox">
                     <br>
-                    <label for="confirmpassword" class="labels">CONFIRM PASSWORD</label>
+                    <label for="confirmpassword" class="labels">*CONFIRM PASSWORD</label>
                     <br>
-                    <input type="password" id="confirmpassword" name="confirm password" class="inputbox">
+                    <input required type="password" id="confirmpassword" name="confirm password" class="inputbox"
+                        minlength="8" maxlength="20">
 
                 </div>
             </form>
         </div>
         <div class="botcontainer">
             <div class="submission">
-                <button type="submit" class="submitbutton">Create Account</button>
+                <button type="submit" form="dataform" class="submitbutton">Create Account</button>
                 <br>
                 <br>
                 <div class="logtext">Already have an account? <strong class="login"> Log in</strong>.</div>
@@ -70,6 +72,7 @@
 
         </div>
     </div>
+    <script src="script.js"></script>
 
 </body>
 

@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Blissfont";
-    src: url(fonts/Sriracha-Regular.ttf);
+    font-family: "newfont";
+    src: url(fonts/Merienda-VariableFont_wght.ttf);
     font-family: "inputlabelfont";
     src: url(fonts/ABeeZee-Regular.ttf);
     font-family: "textfont";
@@ -40,6 +40,7 @@ body {
 }
 
 .textwrap {
+    font-weight: bold;
     margin-left: 5%;
     margin-top: 10%;
     font-family: "textfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -57,7 +58,7 @@ body {
     margin-top: 38%;
     background-color: rgba(109, 108, 107, 0.348);
     height: 17%;
-    font-family: 'Blissfont', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: "blissfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 }
 
@@ -92,11 +93,14 @@ body {
 
 .labels {
     font-size: xx-small;
+    font-weight: 500;
     font-family: "inputlabelfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(90, 88, 88);
 
 }
 
 .moretext {
+    font-weight: bold;
     font-family: "textfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -124,4 +128,11 @@ body {
     font-family: "textfont", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: small;
 
+}
+
+#e-mail:invalid,
+#firstname:invalid,
+#confirmpassword:invalid,
+#password:invalid {
+    border: 2px dashed red;
 }
